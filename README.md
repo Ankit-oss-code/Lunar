@@ -1,2 +1,2 @@
 # Lunar
-An Game Engine.
+It is an Game Engine.
