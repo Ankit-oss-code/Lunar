@@ -24,5 +24,18 @@ namespace Lunar
 }
 
 
+#define LU_CORE_ERROR(...)    ::Lunar::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define LU_CORE_WARN(...)     ::Lunar::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define LU_CORE_INFO(...)     ::Lunar::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define LU_CORE_TRACE(...)    ::Lunar::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define LU_CORE_FATAL(...)    ::Lunar::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+
+#define LU_ERROR(...)         ::Lunar::Log::GetClientLogger()->error(__VA_ARGS__)
+#define LU_WARN(...)          ::Lunar::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define LU_INFO(...)          ::Lunar::Log::GetClientLogger()->info(__VA_ARGS__)
+#define LU_TRACE(...)         ::Lunar::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define LU_FATAL(...)         ::Lunar::Log::GetClientLogger()->fatal(__VA_ARGS__)
+
+
 
 
